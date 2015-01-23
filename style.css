@@ -1,8 +1,19 @@
 /* Some high-level shit */
 
+html {
+	height: 100%;
+}
+
 body {
 	margin: 0;
 	padding: 0;
+	height: 100%;
+}
+
+.site-wrap {
+	min-height: 100%;
+	/* for footer */
+	margin-bottom: -75px;
 }
 
 #header {
@@ -130,6 +141,10 @@ body {
 	background-repeat: no-repeat;
 }
 
+#posts-1:hover {
+	-webkit-filter: blur(3px);
+}
+
 #posts-2 {
 	position: relative;
 	display: inline-block;
@@ -141,6 +156,31 @@ body {
 	background-repeat: no-repeat;
 }
 
+#posts-2:hover {
+	-webkit-filter: blur(3px);
+}
+
 h2 {
 	color: #FFF;
+}
+
+/* Footer */
+
+.site-wrap:after {
+	content:"";
+	display: block;
+}
+
+.site-footer, .site-wrap:after {
+	height: 75px;
+}
+
+.site-footer {
+	background-color: #013352;
+	color: #fff0e5;
+	text-align: center;
+}
+
+#copyright {
+	padding-top: 30px;
 }
