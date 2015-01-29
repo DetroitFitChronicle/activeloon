@@ -29,6 +29,7 @@ body {
 	height: 125px;
 	background-color: #013352;
 	font-size: 0;
+	z-index: 1;
 }
 
 #header-content {
@@ -185,6 +186,7 @@ h2 {
 	display: inline-block;
 	width: 100%;
 	text-align: center;
+	z-index: 0;
 }
 
 .cover {
