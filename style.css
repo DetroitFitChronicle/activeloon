@@ -1,5 +1,9 @@
 /* Some high-level shit */
 
+* {
+	margin: 0;
+}
+
 html {
 	height: 100%;
 }
@@ -14,6 +18,7 @@ body {
 	min-height: 100%;
 	/* for footer */
 	margin-bottom: -75px;
+	font-size: 0;
 }
 
 #header {
@@ -23,11 +28,13 @@ body {
 	width: 100%;
 	height: 125px;
 	background-color: #013352;
+	font-size: 0;
 }
 
 #header-content {
 	width: 75%;
 	margin: auto;
+	font-size: 1rem;
 }
 
 #logo {
@@ -105,11 +112,13 @@ body {
 #content {
 	clear: left;
 	width: 100%;
+	margin: 0;
 }
 
 #posts {
 	vertical-align: top;
 	left: 7%;
+	margin: 0;
 }
 
 #issue-title {
@@ -124,10 +133,10 @@ body {
 }
 
 #issue-title h2 {
-	color: #C0C0C0;
+	color: #013352;
 	width: 75%;
 	margin: auto;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid #013352;
 }
 
 #posts-1 {
@@ -139,10 +148,18 @@ body {
 	background-position: center;
 	background-size: auto 1000px;
 	background-repeat: no-repeat;
+	margin: 0;
 }
 
-#posts-1:hover {
-	-webkit-filter: blur(3px);
+.posts-text {
+	position: absolute;
+	bottom: 0;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	margin: 0;
+	padding-right: 10px;
+	padding-left: 10px;
+	width: 100%;
 }
 
 #posts-2 {
@@ -154,14 +171,52 @@ body {
 	background-position: center;
 	background-size: auto 1000px;
 	background-repeat: no-repeat;
-}
-
-#posts-2:hover {
-	-webkit-filter: blur(3px);
+	margin-top: 0;
 }
 
 h2 {
 	color: #FFF;
+}
+
+/* Page template */
+
+#cover-container {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.cover {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	max-width: 1200px;
+	height: 500px;
+	background-image: url("images/lion-attack.jpg");
+	background-position: center;
+	background-size: auto 1200px;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+#cover-text {
+	width: 100%;
+	height: 350px;
+	text-align: center;
+	padding-top: 150px;
+	background-color: rgba(0,0,0,.2);
+	background-size: auto 1000px;
+	margin: 0;
+	font-size: 2rem;
+}
+
+.article-content {
+	width: 75%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1rem;
 }
 
 /* Footer */
@@ -184,3 +239,4 @@ h2 {
 #copyright {
 	padding-top: 30px;
 }
+
